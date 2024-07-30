@@ -1,0 +1,150 @@
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    
+    &-title {
+        color: $title-text-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    }
+
+    &-title-list {
+        color: $primary-text-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    }
+    &-box {
+        background-color: $background-color;
+        padding: 25px 100px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.page-benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.preference-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.occupation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us {
+    padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.section-title {
+    color: $title-text-color;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.2;
+text-align: center;
+margin-bottom: 50px;
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .benefits.list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-benefits {
+        padding: 60px 15px;
+    }
+
+    .preference-item:not(:last-child) {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .benefit-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 30px;
+      width: 450px;
+      height: 120px;
+      background-color: #F5F4FA;
+    }
+
+    .benefits-title {
+       text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    
+    .benefits.list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    .preference-item {
+        margin: 15px;
+        width: calc((100% - 4 * 15px) / 2);
+    }
+
+    .benefit-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        margin-bottom: 30px;
+        width: 354px;
+        height: 120px;
+        background-color: #F5F4FA;
+      }
+
+      .preference-item:not(:last-child) {
+        margin-right: 15px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .benefits {
+        display: flex;
+        justify-content: space-between;
+    }    
+
+    .preference-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .benefit-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        margin-bottom: 30px;
+        width: 270px;
+        height: 120px;
+        background-color: #F5F4FA;
+      }
+
+      .page-benefits {
+        padding-top: 94px;
+        padding-bottom: 94px;
+      }
+
+}
+

@@ -1,0 +1,107 @@
+.project-list-box {
+    padding: 20px 24px;
+}
+
+.project-list-name {
+color: $title-text-color;
+font-size: 18px;
+font-weight: 700;
+line-height: 2;
+letter-spacing: 0.06em;
+margin-bottom: 4px;
+}
+
+.project-list-item {
+color: primary-text-color;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.8;
+letter-spacing: 0.03em;
+}
+
+.project-cover {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.project-list-slide {
+position: absolute;
+
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+
+padding: 63px 24px;
+color: $white-color;
+background-color: $secondary-color;
+font-size: 18px;
+font-weight: 400;
+line-height: 1.6;
+letter-spacing: 0.03em;
+
+transform: translateY(100%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.project-list-link:hover &,
+.project-list-link:focus & {
+  transform: translateY(0);
+}
+}
+
+
+
+.project-list {
+   border: 1px solid #EEEEEE;
+   margin: 15px;
+   box-sizing: border-box;
+}
+
+
+
+.project-list:hover {
+    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
+}
+
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .project-list {
+        width: 450px;
+        height: 404px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .project-list {
+        width: 450px;
+        height: 404px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .project-list {
+        width: 354px;
+        height: 440px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .project-list {
+      width: 370px;
+      height: 404px;
+    }
+}

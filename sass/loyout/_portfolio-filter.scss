@@ -1,0 +1,68 @@
+.portfolio {
+    color: $secondary-color;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.filter-list:not(:last-child) {
+    margin-right: 8px;
+    }
+
+.filter-list-item {
+    color: $title-text-color;
+    background-color: $background-color;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.6;
+letter-spacing: 0.03em;
+border-radius: 4px;
+padding: 6px 22px;  
+border: 1px solid transparent;
+border-color: $background-color;
+
+}
+
+.filter-list-item:hover {
+background-color: $secondary-color;
+color: $background-color;
+}
+
+@media screen and (max-width: 767px) {
+    .buttons.list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 15px;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .filter-list {
+        margin-bottom: 15px;
+    }
+    
+    .filter {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+}
+
+// .filter {
+//     padding: 94px 215px;
+// }
+
+@media screen and (min-width: 768px) {
+    .filter {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .buttons {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,98 @@
+.clients {
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+    &-link {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    }
+}
+
+
+.clients-link:hover {
+    border-color: $secondary-color;
+    fill: $secondary-color;
+}
+
+@media screen and (max-width: 767px) {
+    .clients-list {
+        margin: -15px;
+        flex-wrap: wrap;
+    }
+
+    .clients {
+        padding: 60px 15px; 
+    }
+
+    .clients-item {
+        margin: 15px;
+        width: calc((100% - 4 * 15px) / 2);;
+    }
+
+    .clients-link {
+        height: 92px;
+        width: 210px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .clients-list {
+        margin: -15px;
+        flex-wrap: wrap;
+    }
+
+    .clients {
+        padding: 60px 15px; 
+    }
+
+    .clients-item {
+        margin: 15px;
+        width: calc((100% - 6 * 15px) / 3);
+    }
+
+    .clients-link {
+        height: 92px;
+        width: 226px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .clients-link {
+        height: 92px;
+        width: 170px;
+    }
+
+    .clients-item {
+        margin: 0;
+    }
+
+    .clients-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .clients-list {
+        margin: 0 auto;
+    }
+
+    .clients {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+

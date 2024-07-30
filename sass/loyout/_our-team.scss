@@ -1,0 +1,130 @@
+.our-team {
+    padding: 94px 215px;
+    background-color: $background-color;
+}
+
+.team-item {
+    background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 270px;
+height: 428px;
+}
+
+
+.container .team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+text-align: center;
+}
+
+.team-name {
+    color: $title-text-color;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.2;
+margin-bottom: 10px;
+}
+
+.team-profession {
+    color: $primary-text-color;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.2;
+margin-bottom: 16px;
+}
+
+.team-link {
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+    margin-left: 32px;
+    margin-right: 32px;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.team-link-social {
+@include icon;
+
+background-color: #FFFFFF;
+fill: #AFB1B8;
+
+}
+
+.team-link-social:hover,
+.team-link-social:focus {
+background-color: $secondary-color;
+fill: $white-color;
+}
+
+@media screen and (max-width: 767px) {
+    .team.list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .section-title {
+        font-size: 28px;
+}
+
+    .team-item {
+        width: 450px;
+        height: 622px;
+}
+    .our-team {
+        padding: 60px 15px;
+}
+
+    .team-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .team.list {
+        display: flex;
+        flex-direction: row;
+        margin: -15px;
+        flex-wrap: wrap;
+    }
+
+    .team-item {
+        width: 354px;
+        height: 536px;
+        margin: 15px;
+        width: calc((100% - 4 * 15px) / 2);
+}
+.our-team {
+    padding: 60px 15px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .team.list {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+
+    .team-item {
+        width: 270px;
+        height: 428px;
+        margin: 0;
+}
+    .team-item:not(:last-child) {
+        margin-right: 30px;
+    }
+     .our-team {
+       padding-top: 94px;
+       padding-bottom: 94px;
+    }
+
+}
